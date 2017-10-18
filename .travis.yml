@@ -7,6 +7,7 @@ matrix:
   fast_finish: true
 
 install:
+  - composer update -vvv --no-lock --prefer-dist
   - composer install -vvv --no-suggest --prefer-dist
 
 notifications:
