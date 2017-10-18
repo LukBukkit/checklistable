@@ -19,6 +19,8 @@ jobs:
     steps:
       - checkout
 
+      - run: composer self-update
+
       # Download and cache dependencies
       - restore_cache:
           keys:
