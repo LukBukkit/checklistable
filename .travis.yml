@@ -9,9 +9,8 @@ matrix:
 install:
   - composer install -vvv --no-suggest --prefer-dist
 
-notifications:
-    script:
-        - "phpunit -v --coverage-text --colors=never --stderr"
+script:
+  - phpunit -v --coverage-text --colors=never --stderr
 
 after_success:
     - php vendor/bin/codacycoverage clover build/logs/clover.xml
