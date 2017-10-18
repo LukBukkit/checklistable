@@ -7,7 +7,7 @@ matrix:
   fast_finish: true
 
 install:
-  - composer install -vvv --no-suggest --prefer-dist
+  - composer install --no-suggest --prefer-dist
 
 script:
   - phpunit -v --coverage-text --colors=never --stderr
