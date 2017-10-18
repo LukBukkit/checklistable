@@ -6,9 +6,8 @@ php:
 matrix:
   fast_finish: true
 
-before_script:
-  - travis_retry composer self-update
-  - travis_retry composer install --prefer-dist --no-ansi --no-interaction --no-progress --no-scripts --no-suggest -vv
+install:
+  - composer install
 
 notifications:
     script:
